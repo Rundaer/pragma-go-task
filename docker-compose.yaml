@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    php:
+        container_name: pragma-php
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/app
+        stdin_open: true
